@@ -256,25 +256,12 @@ This allows automated tests to:
    git push
    ```
 
-2. **Import project on Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Add New Project"
-   - Import your Git repository
-   - Vercel auto-detects Next.js
-
-3. **Configure environment variables**
-   - `DATABASE_URL`: Your PostgreSQL connection string
-     - For Supabase: Use connection pooling URL (port 6543)
-     - For Neon: Use connection string from dashboard
-   - `BASE_URL`: Optional (auto-detected from headers)
-   - `TEST_MODE`: Optional (set to `1` for testing)
-
-4. **Deploy**
+2. **Deploy**
    - Click "Deploy"
    - Vercel automatically runs `npm install` and `npm run build`
    - Prisma Client is generated via `postinstall` script
 
-5. **Set up database schema**
+3. **Set up database schema**
    ```bash
    # After deployment, run:
    npx prisma db push
@@ -421,5 +408,4 @@ This project is part of a take-home assignment for Aganitha.
 
 ---
 
-**Deployed URL**: [Your Vercel URL here]  
-**Repository**: [Your Git repository URL here]
+**Deployed URL**: [https://pastebin-lite-red.vercel.app/]  
